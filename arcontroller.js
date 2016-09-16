@@ -324,25 +324,6 @@ window.addEventListener('load', function() {
 
                   menu_open = !menu_open;
                 break;
-                case 'ar_button_one':
-                case 'ar_button_two':
-                case 'ar_button_three':
-                case 'ar_button_four':
-                case 'ar_button_five':
-                case 'ar_button_six':
-                case 'ar_button_seven':
-                  var request = new XMLHttpRequest();
-                  request.open('GET', 'http://maker.ifttt.com/trigger/'+e.detail.projection_id+'/with/key/yourkeyhere', true);
-
-                  request.onload = function() {
-                    if (request.status >= 200 && request.status < 400) {
-                      var data = JSON.parse(request.responseText);
-                      console.log(data);
-                    }
-                  };
-
-                  request.send();
-                break;
               }
             }, false);
           } // success()
