@@ -61,7 +61,8 @@ window.addEventListener('load', function() {
               material: {
                 type: 'phong',
                 color: 0xFF6600
-              }
+              },
+              texture: { path:'xively.png'}
             }, {poi_id: 'marker'});
 
             awe.projections.add({
