@@ -26,7 +26,8 @@ window.addEventListener('load', function() {
           ],
           success: function() {
             window.awe.setup_scene();
-
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("container").style.display = "block";
             // Points of Interest
             awe.pois.add({id: 'marker', position: {x: 0, y: 0, z: 10000}, visible: false});
 
